@@ -21,16 +21,20 @@
                 <div class="logo">
                     <img src="images/logo/Booki.png" alt="logo Booki">
                 </div>
-                <nav class ="navigation">
+                <nav class="navigation">
                     <ul>
-                        <li><a href="hebergements">Hébergements</a></li>
-                        <li><a href="activites">Activités</a></li>
+                        <li><a href="#hebergements" aria-label="Voir les Hébergements">Hébergements</a></li>
+                        <li><a href="#activites" aria-label="Voir les Activités">Activités</a></li>
                     </ul>
+                            <!--formulaire de recherche-->
+                        <form action="search-results.html" method="get" class="search-form">
+                        <label for="search">Recherche :</label>
+                            <input type="text" id="search" name="search" placeholder="Recherchez une ville">     
+                       <button type="submit" class="search-icon">
+                        <i class="fas fa-search"></i>
+                       </button>
+                        </form>
                 </nav>
-                <div class="recherche">
-                    <label for="search">Recherche :</label>
-                    <input type="text" id="search" name="search" placeholder="Recherchez une ville">
-                </div>
             </div>
         </header>
         <main>
