@@ -21,22 +21,53 @@
                 <div class="logo">
                     <img src="images/logo/Booki.png" alt="logo Booki">
                 </div>
-                <nav class ="navigation">
+                <nav class="navigation">
                     <ul>
-                        <li><a href="hebergements">Hébergements</a></li>
-                        <li><a href="activites">Activités</a></li>
+                        <li><a href="#hebergements" aria-label="Voir les Hébergements">Hébergements</a></li>
+                        <li><a href="#activites" aria-label="Voir les Activités">Activités</a></li>
                     </ul>
+                            <!--formulaire de recherche-->
+                        <form action="search-results.html" method="get" class="search-form">
+                        <label for="search">Recherche :</label>
+                            <input type="text" id="search" name="search" placeholder="Recherchez une ville" aria-label="Rechercher une ville">     
+                       <button type="submit" class="search-icon" aria-label="Rechercher">
+                        <i class="fas fa-search"></i>
+                       </button>
+                        </form>
                 </nav>
-                <div class="recherche">
-                    <label for="search">Recherche :</label>
-                    <input type="text" id="search" name="search" placeholder="Recherchez une ville">
-                </div>
             </div>
         </header>
         <main>
             <div class="hebergements-and-populaires">
                 <section class="hebergements">
-
+                    <!--Liste des filtres par thème-->
+                    <section class="liste-filtre">
+                        <div class="liste-filtre">
+                            <ul>
+                                <li><a href="#petitbudget">Petit budget</a></li>
+                                <li><a href="#enamoureux">Pour les amoureux</a></li>
+                                <li><a href="#famille">Famille</a></li>
+                                <li><a href="#luxe">Luxe</a></li>
+                            </ul>
+                        </div>
+                                        <!--Partie main en dessous de la liste des filtres-->
+                        <div class="hebergement-cards">
+                            <div class="hebergements-title"><h2 class="section-title">Votre futur hébergement</h2>
+                        <i class="fa-solid fa-chart-line" aria-hidden="true"></i>
+                            </div>
+                        <a href="#">
+                            <article class="card">
+                                <img src="images/hebergements/annie-spratt.jpg" alt="Image de la chambre bleue montrant un lit">
+                                <div class="card-content">
+                                    <div class="card.text">
+                                        <h3 class="card-title">Hotel mer bleu royal</h3>
+                                        <p class="card-subtitle">Nuit à partir de 200<span class="euro">€</span></p>
+                                    </div>
+                                </div>
+                            </article>
+                        </a>
+                        </div>
+                    </section>
                 </section>
                 <section class="populaires">
                     <div class="populaires-title">
