@@ -157,7 +157,7 @@ cursor: pointer;
 }
 
 .liste-filtre ul li:hover{
-    background-color: rgba(01, 101, 252 ,0.2);
+    background-color: rgba(0, 101, 252, 0.4) ;
     transition: background-color 0.3s ease ;
 }
 
@@ -220,6 +220,50 @@ cursor: pointer;
     border-top-right-radius: 20px;
     height: 160px;
     object-fit: cover;
+}
+
+.afficherplus a{
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    font-size: 18px;
+    padding: 8px 16px;
+    text-decoration: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.afficherplus a:hover{
+    background-color: rgba(0, 101, 252, 0.4) ;
+    transition: border-top 0.3s ease;
+}
+
+/****** Activités ***********/
+
+.activite{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 40px;
+    box-sizing: border-box;
+    object-fit: cover;
+}
+
+.activite .card{
+    width: 150px;
+    height: 350px;
+    box-sizing: border-box;
+    object-fit: cover;
+}
+
+.activites-title{
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 20px;
+    padding-top: 20px;
 }
 
 /****** Populaires ***********/
