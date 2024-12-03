@@ -74,6 +74,8 @@ a {
     gap: 30px;
     padding: 30px;
     margin: 30px 0px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /*ombre légère*/
+    border: 1px solid rgba(0, 0, 0, 0.1) /*Bordure douce*/
 }
 
 .logo img {
@@ -313,7 +315,49 @@ cursor: pointer;
 }
 
 
+/****** Footer***********/
+.footer-container{
+    background-color: var(--main-bg-color);
+    border-radius: 20px;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    padding: 30px;
+    margin: 30px 0px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /*ombre légère*/
+    border: 1px solid rgba(0, 0, 0, 0.1)
+}
 
+.footer-container .logo img{
+    max-width: 120px;
+    height: auto;
+}
+
+.footer-links ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content:space-between;
+    gap: 30px;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links a:hover{
+    color:var(--main-color);
+    transform: scale(1.05);
+}
+
+.footer-sns{
+    font-size: 32px;
+    display: flex;
+    gap: 30px;
+}
+
+.footer-sns a:hover{
+    color:var(--main-color);
+    transform: scale(1.05);
+}
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
