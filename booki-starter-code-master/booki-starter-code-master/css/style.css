@@ -21,6 +21,7 @@ body {
 .main-container {
     width: 100%;
     max-width: 1440px;
+    min-width: 320px;
     padding: 0 50px;
     box-sizing: border-box;
 }
@@ -196,7 +197,6 @@ cursor: pointer;
 
 .hebergements-title {
     display: flex;
-    justify-content: center;
     justify-content: space-evenly;
     align-items: center;
     margin-top: 20px;
@@ -273,7 +273,6 @@ cursor: pointer;
 
 .activites-title{
     display: flex;
-    justify-content: center;
     justify-content: space-evenly;
     align-items: center;
     margin-top: 20px;
@@ -288,7 +287,7 @@ cursor: pointer;
 
 .populaires-title {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
 }
 
@@ -407,7 +406,48 @@ cursor: pointer;
     .populaires-cards .card-subtitle {
         font-size: 13px;
     }
+
+    /* A ranger après : Ma partie pour less/equal than 1024px) */
+    
+    .entete{
+        padding: 8px 10px;
+        gap: 15px;
+        align-items: center;
+    }
+
+    .logo img{
+        max-height: 30px;
+    }
+
+    .navigation ul{
+        font-size: 18px;
+    }
+
+    .navigation li{
+        margin: 0 10px;
+    }
+
+    .search-form{
+        display:flex ;
+    }
+
+    .search-form input{
+        display: none;
+    }
+
+    .search-form label{
+        display: none;
+    }
+
+    .marseille-img{
+        overflow: hidden; 
+    }
+
 }
+
+
+
+
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
